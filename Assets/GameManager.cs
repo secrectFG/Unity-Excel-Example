@@ -12,22 +12,22 @@ public class GameManager : MonoBehaviour
     {
         EnemyData.Init();
         Debug.Log(EnemyData.EnemyDataEntityDic.Count);
-        //Êä³ö±íÄÚÈÝ
-        //foreach (var item in EnemyData.EnemyDataEntities)
-        //{
-        //    Debug.Log(item.Id + " " + item.Name + " " + item.Health + " " + item.Exp+ " " + item.Attack+ " "+ item.ÖÐÎÄ²âÊÔ);
-        //}
+        //è¾“å‡ºè¡¨å†…å®¹
+        foreach (var item in EnemyData.EnemyDataEntities)
         {
-            var item = EnemyData.EnemyDataEntityDic[1];
-            Debug.Log(item.Id + " " + item.Name + " " + item.Health + " " + 
-            item.Exp + " " + item.Attack + " " + item.ÖÐÎÄ²âÊÔ);
+           Debug.Log(item.Id + " " + item.Name + " " + item.Health + " " + item.Exp+ " " + item.Attack+ " "+ item.ä¸­æ–‡æµ‹è¯•);
         }
-        
+        // {
+        //     var item = EnemyData.EnemyDataEntityDic[1];
+        //     Debug.Log(item.Id + " " + item.Name + " " + item.Health + " " +
+        //     item.Exp + " " + item.Attack + " " + item.ä¸­æ–‡æµ‹è¯•);
+        // }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
